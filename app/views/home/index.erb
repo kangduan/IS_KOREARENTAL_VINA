@@ -4,28 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>Homepage</title>
+<title>IS_KOREARENTAL_VINA</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css">
 
 <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="assets/js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="assets/js/wow.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
 <script src="contactform/contactform.js"></script>
 
 <!-- =======================================================
@@ -37,10 +37,11 @@
 
 </head>
 <body>
-<header class="header" id="header"><!--header-start-->
+	<!--
+<header class="header" id="header">  <!--header-start
 	<div class="container">
     	<figure class="logo animated fadeInDown delay-07s">
-        	<a href="#"><img src="img/logo.png" alt=""></a>
+        	<a href="#"><%= image_tag "/img/logo/main_logo.png" %></a>
         </figure>
         <h1 class="animated fadeInDown delay-07s">Welcome To Knight Studios</h1>
         <ul class="we-create animated fadeInUp delay-1s">
@@ -48,7 +49,69 @@
         </ul>
             <a class="link animated fadeInUp delay-1s" href="#">Get Started</a>
     </div>
-</header><!--header-end-->
+</header>  <!--header-end
+-->
+<div id="first-slider">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- Item 1 -->
+            <div class="item active slide1">
+                <div class="row"><div class="container">
+                    <div class="col-md-3 text-right">
+                        <%= image_tag "slider-menu/innovate.png" %>
+                    </div>
+                    <div class="col-md-9 text-left">
+                        <h3 data-animation="animated bounceInDown">Add images, or even your logo!</h3>
+                        <h4 data-animation="animated bounceInUp">Easily use stunning effects</h4>
+                     </div>
+                </div></div>
+             </div>
+            <!-- Item 2 -->
+            <div class="item slide2">
+                <div class="row"><div class="container">
+                    <div class="col-md-7 text-left">
+                        <h3 data-animation="animated bounceInDown"> 50 animation options A beautiful</h3>
+                        <h4 data-animation="animated bounceInUp">Create beautiful slideshows </h4>
+                     </div>
+                    <div class="col-md-5 text-right">
+                        <%= image_tag "slider-menu/best2.png" %>
+                    </div>
+                </div></div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item slide3">
+                <div class="row"><div class="container">
+                    <div class="col-md-7 text-left">
+                        <h3 data-animation="animated bounceInDown">Simple Bootstrap Carousel</h3>
+                        <h4 data-animation="animated bounceInUp">Bootstrap Image Carousel Slider with Animate.css</h4>
+                     </div>
+                    <div class="col-md-5 text-right">
+                        <%= image_tag "slider-menu/create.png" %>
+                    </div>
+                </div></div>
+            </div>
+            <!-- End Item 4 -->
+
+        </div>
+        <!-- End Wrapper for slides-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
 
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
@@ -56,7 +119,7 @@
         	<li><a href="#header">Home</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
-            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+            <li class="small-logo"><a href="#header"><%= image_tag "is-menu.png" %></a></a></li>
             <li><a href="#client">Clients</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -111,7 +174,8 @@
                 </div>
             </div>
             <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-            	<img src="img/macbook-pro.png" alt="">
+
+							<%= image_tag "img/macbook-pro.png" %>
             </figure>
 
         </div>
@@ -469,6 +533,49 @@ $(window).load(function(){
 });
 
 </script>
+<!-- main slider menu -->
+<script>
+(function( $ ) {
 
+    //Function to animate slider captions
+	function doAnimations( elems ) {
+		//Cache the animationend event in a variable
+		var animEndEv = 'webkitAnimationEnd animationend';
+
+		elems.each(function () {
+			var $this = $(this),
+				$animationType = $this.data('animation');
+			$this.addClass($animationType).one(animEndEv, function () {
+				$this.removeClass($animationType);
+			});
+		});
+	}
+
+	//Variables on page load
+	var $myCarousel = $('#carousel-example-generic'),
+		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+
+	//Initialize carousel
+	$myCarousel.carousel();
+
+	//Animate captions in first slide on page load
+	doAnimations($firstAnimatingElems);
+
+	//Pause carousel
+	$myCarousel.carousel('pause');
+
+
+	//Other slides to be animated on carousel slide event
+	$myCarousel.on('slide.bs.carousel', function (e) {
+		var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+		doAnimations($animatingElems);
+	});
+    $('#carousel-example-generic').carousel({
+        interval:5000,
+        pause: "false"
+    });
+
+})(jQuery);
+</script>
 </body>
 </html>
