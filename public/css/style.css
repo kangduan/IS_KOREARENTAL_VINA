@@ -821,7 +821,6 @@ border: 2px solid #fff;
 .portfolioContainer{
 	max-width: 1140px;
 }
-
 /********************************/
 /*          Main CSS     */
 /********************************/
@@ -987,18 +986,18 @@ border: 2px solid #fff;
 /*       Slides backgrounds     */
 /********************************/
 #first-slider .slide1 {
-    background-image: url("img/logo/innovate.png");
-    background-size: cover;
+    background-image: url(http://s20.postimg.org/h50tgcuz1/image.jpg);
+      background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide2 {
-    background-image: url("img/logo/best2.png");
-    background-size: cover;
+  background-image: url(http://s20.postimg.org/uxf8bzlql/image.jpg);
+      background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide3 {
-    background-image: url("img/logo/create.png");
-    background-size: cover;
+  background-image: url(http://s20.postimg.org/el56m97f1/image.jpg);
+      background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide4 {
