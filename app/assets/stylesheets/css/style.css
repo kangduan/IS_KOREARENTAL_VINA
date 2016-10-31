@@ -987,17 +987,17 @@ border: 2px solid #fff;
 /*       Slides backgrounds     */
 /********************************/
 #first-slider .slide1 {
-    background:url(../img/innovate.png)
+    background:url(../img/logo/innovate.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide2 {
-    background:url(../img/best2.png)
+    background:url(../img/logo/best2.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide3 {
-    background:url(../img/create.png)
+    background:url(../img/logo/create.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
